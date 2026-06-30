@@ -1858,9 +1858,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue3)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]" />
+      <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue3)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+        <svrl:failed-assert test="string-length($codeValue3)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
           <xsl:attribute name="id">FX-SCH-A-000022</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -1880,9 +1880,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue2)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]" />
+      <xsl:when test="string-length($codeValue2)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue2)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]">
+        <svrl:failed-assert test="string-length($codeValue2)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]">
           <xsl:attribute name="id">FX-SCH-A-000023</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -1997,9 +1997,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue1)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]" />
+      <xsl:when test="string-length($codeValue1)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue1)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]">
+        <svrl:failed-assert test="string-length($codeValue1)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]">
           <xsl:attribute name="id">FX-SCH-A-000026</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -2127,9 +2127,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue4)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]" />
+      <xsl:when test="string-length($codeValue4)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue4)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]">
+        <svrl:failed-assert test="string-length($codeValue4)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]">
           <xsl:attribute name="id">FX-SCH-A-000031</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -2253,9 +2253,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue5)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]" />
+      <xsl:when test="string-length($codeValue5)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue5)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]">
+        <svrl:failed-assert test="string-length($codeValue5)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]">
           <xsl:attribute name="id">FX-SCH-A-000036</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -2275,9 +2275,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue4)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]" />
+      <xsl:when test="string-length($codeValue4)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue4)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]">
+        <svrl:failed-assert test="string-length($codeValue4)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]">
           <xsl:attribute name="id">FX-SCH-A-000031</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -2434,9 +2434,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue6)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]" />
+      <xsl:when test="string-length($codeValue6)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue6)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]">
+        <svrl:failed-assert test="string-length($codeValue6)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]">
           <xsl:attribute name="id">FX-SCH-A-000040</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -2605,9 +2605,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue7)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]" />
+      <xsl:when test="string-length($codeValue7)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue7)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]">
+        <svrl:failed-assert test="string-length($codeValue7)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]">
           <xsl:attribute name="id">FX-SCH-A-000045</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />
@@ -2627,9 +2627,9 @@
 
 		<!--ASSERT -->
 <xsl:choose>
-      <xsl:when test="string-length($codeValue8)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]" />
+      <xsl:when test="string-length($codeValue8)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]" />
       <xsl:otherwise>
-        <svrl:failed-assert test="string-length($codeValue8)=0 or document('FACTUR-X_MINIMUM_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]">
+        <svrl:failed-assert test="string-length($codeValue8)=0 or document('Factur-X_MINIMUM_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]">
           <xsl:attribute name="id">FX-SCH-A-000045</xsl:attribute>
           <xsl:attribute name="location">
             <xsl:apply-templates mode="schematron-select-full-path" select="." />

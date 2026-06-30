@@ -5084,10 +5084,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5242,10 +5242,10 @@
       <xsl:variable name="codeValue5" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue5)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]"/>
+         <xsl:when test="string-length($codeValue5)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue5)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]">
+                                test="string-length($codeValue5)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5298,10 +5298,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5321,10 +5321,10 @@
       <xsl:variable name="codeValue4" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue4)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]"/>
+         <xsl:when test="string-length($codeValue4)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue4)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]">
+                                test="string-length($codeValue4)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=4]/enumeration[@value=$codeValue4]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5354,10 +5354,10 @@
       <xsl:variable name="codeValue2" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue2)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]"/>
+         <xsl:when test="string-length($codeValue2)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue2)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]">
+                                test="string-length($codeValue2)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=2]/enumeration[@value=$codeValue2]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5473,10 +5473,10 @@
       <xsl:variable name="codeValue1" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue1)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]"/>
+         <xsl:when test="string-length($codeValue1)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue1)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]">
+                                test="string-length($codeValue1)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=1]/enumeration[@value=$codeValue1]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5612,10 +5612,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5689,10 +5689,10 @@
       <xsl:variable name="codeValue20" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue20)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]"/>
+         <xsl:when test="string-length($codeValue20)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue20)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]">
+                                test="string-length($codeValue20)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5712,10 +5712,10 @@
       <xsl:variable name="codeValue40" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue40)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=40]/enumeration[@value=$codeValue40]"/>
+         <xsl:when test="string-length($codeValue40)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=40]/enumeration[@value=$codeValue40]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue40)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=40]/enumeration[@value=$codeValue40]">
+                                test="string-length($codeValue40)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=40]/enumeration[@value=$codeValue40]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5819,10 +5819,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -5914,10 +5914,10 @@
       <xsl:variable name="codeValue39" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue39)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=39]/enumeration[@value=$codeValue39]"/>
+         <xsl:when test="string-length($codeValue39)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=39]/enumeration[@value=$codeValue39]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue39)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=39]/enumeration[@value=$codeValue39]">
+                                test="string-length($codeValue39)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=39]/enumeration[@value=$codeValue39]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6030,10 +6030,10 @@
       <xsl:variable name="codeValue19" select="@mimeCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue19)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]"/>
+         <xsl:when test="string-length($codeValue19)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue19)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]">
+                                test="string-length($codeValue19)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6079,10 +6079,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6156,10 +6156,10 @@
       <xsl:variable name="codeValue38" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue38)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=38]/enumeration[@value=$codeValue38]"/>
+         <xsl:when test="string-length($codeValue38)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=38]/enumeration[@value=$codeValue38]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue38)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=38]/enumeration[@value=$codeValue38]">
+                                test="string-length($codeValue38)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=38]/enumeration[@value=$codeValue38]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6219,10 +6219,10 @@
       <xsl:variable name="codeValue36" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue36)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=36]/enumeration[@value=$codeValue36]"/>
+         <xsl:when test="string-length($codeValue36)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=36]/enumeration[@value=$codeValue36]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue36)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=36]/enumeration[@value=$codeValue36]">
+                                test="string-length($codeValue36)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=36]/enumeration[@value=$codeValue36]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6242,10 +6242,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6508,10 +6508,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6584,10 +6584,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6635,10 +6635,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6693,10 +6693,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6838,10 +6838,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -6914,10 +6914,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -7288,10 +7288,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -7364,10 +7364,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -7415,10 +7415,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -7473,10 +7473,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -7618,10 +7618,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -7894,10 +7894,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -7970,10 +7970,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8021,10 +8021,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8079,10 +8079,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8164,10 +8164,10 @@
       <xsl:variable name="codeValue34" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue34)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=34]/enumeration[@value=$codeValue34]"/>
+         <xsl:when test="string-length($codeValue34)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=34]/enumeration[@value=$codeValue34]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue34)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=34]/enumeration[@value=$codeValue34]">
+                                test="string-length($codeValue34)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=34]/enumeration[@value=$codeValue34]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8239,10 +8239,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8315,10 +8315,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8392,10 +8392,10 @@
       <xsl:variable name="codeValue37" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue37)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=37]/enumeration[@value=$codeValue37]"/>
+         <xsl:when test="string-length($codeValue37)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=37]/enumeration[@value=$codeValue37]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue37)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=37]/enumeration[@value=$codeValue37]">
+                                test="string-length($codeValue37)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=37]/enumeration[@value=$codeValue37]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8694,10 +8694,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8770,10 +8770,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8821,10 +8821,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -8879,10 +8879,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9024,10 +9024,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9100,10 +9100,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9474,10 +9474,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9550,10 +9550,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9601,10 +9601,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9659,10 +9659,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9804,10 +9804,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -9880,10 +9880,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10268,10 +10268,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10344,10 +10344,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10395,10 +10395,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10453,10 +10453,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10538,10 +10538,10 @@
       <xsl:variable name="codeValue35" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue35)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=35]/enumeration[@value=$codeValue35]"/>
+         <xsl:when test="string-length($codeValue35)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=35]/enumeration[@value=$codeValue35]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue35)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=35]/enumeration[@value=$codeValue35]">
+                                test="string-length($codeValue35)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=35]/enumeration[@value=$codeValue35]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10613,10 +10613,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10890,10 +10890,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -10966,10 +10966,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11017,10 +11017,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11075,10 +11075,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11277,10 +11277,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11371,10 +11371,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11537,10 +11537,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11613,10 +11613,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11797,10 +11797,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -11981,10 +11981,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -12133,10 +12133,10 @@
       <xsl:variable name="codeValue41" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue41)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=41]/enumeration[@value=$codeValue41]"/>
+         <xsl:when test="string-length($codeValue41)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=41]/enumeration[@value=$codeValue41]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue41)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=41]/enumeration[@value=$codeValue41]">
+                                test="string-length($codeValue41)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=41]/enumeration[@value=$codeValue41]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -12386,10 +12386,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -12462,10 +12462,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -12513,10 +12513,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -12571,10 +12571,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -12716,10 +12716,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -12969,10 +12969,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13045,10 +13045,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13096,10 +13096,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13154,10 +13154,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13299,10 +13299,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13552,10 +13552,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13628,10 +13628,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13679,10 +13679,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13737,10 +13737,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -13882,10 +13882,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14113,10 +14113,10 @@
       <xsl:variable name="codeValue24" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
+         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
+                                test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14136,10 +14136,10 @@
       <xsl:variable name="codeValue27" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue27)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]"/>
+         <xsl:when test="string-length($codeValue27)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue27)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]">
+                                test="string-length($codeValue27)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14159,10 +14159,10 @@
       <xsl:variable name="codeValue25" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
+         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
+                                test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14233,10 +14233,10 @@
       <xsl:variable name="codeValue44" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue44)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=44]/enumeration[@value=$codeValue44]"/>
+         <xsl:when test="string-length($codeValue44)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=44]/enumeration[@value=$codeValue44]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue44)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=44]/enumeration[@value=$codeValue44]">
+                                test="string-length($codeValue44)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=44]/enumeration[@value=$codeValue44]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14256,10 +14256,10 @@
       <xsl:variable name="codeValue26" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
+         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
+                                test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14332,10 +14332,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14368,10 +14368,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14409,10 +14409,10 @@
       <xsl:variable name="codeValue42" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
+         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
+                                test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14463,10 +14463,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14558,10 +14558,10 @@
       <xsl:variable name="codeValue51" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue51)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=51]/enumeration[@value=$codeValue51]"/>
+         <xsl:when test="string-length($codeValue51)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=51]/enumeration[@value=$codeValue51]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue51)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=51]/enumeration[@value=$codeValue51]">
+                                test="string-length($codeValue51)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=51]/enumeration[@value=$codeValue51]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14842,10 +14842,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14918,10 +14918,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -14969,10 +14969,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -15027,10 +15027,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -15172,10 +15172,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -15438,10 +15438,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -15514,10 +15514,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -15565,10 +15565,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -15623,10 +15623,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -15768,10 +15768,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16034,10 +16034,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16110,10 +16110,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16161,10 +16161,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16219,10 +16219,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16364,10 +16364,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16630,10 +16630,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16706,10 +16706,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16757,10 +16757,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16815,10 +16815,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -16960,10 +16960,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17001,10 +17001,10 @@
       <xsl:variable name="codeValue52" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue52)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=52]/enumeration[@value=$codeValue52]"/>
+         <xsl:when test="string-length($codeValue52)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=52]/enumeration[@value=$codeValue52]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue52)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=52]/enumeration[@value=$codeValue52]">
+                                test="string-length($codeValue52)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=52]/enumeration[@value=$codeValue52]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17073,10 +17073,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17199,10 +17199,10 @@
       <xsl:variable name="codeValue24" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
+         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
+                                test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17240,10 +17240,10 @@
       <xsl:variable name="codeValue25" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
+         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
+                                test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17319,10 +17319,10 @@
       <xsl:variable name="codeValue26" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
+         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
+                                test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17395,10 +17395,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17490,10 +17490,10 @@
       <xsl:variable name="codeValue53" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue53)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=53]/enumeration[@value=$codeValue53]"/>
+         <xsl:when test="string-length($codeValue53)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=53]/enumeration[@value=$codeValue53]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue53)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=53]/enumeration[@value=$codeValue53]">
+                                test="string-length($codeValue53)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=53]/enumeration[@value=$codeValue53]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17772,10 +17772,10 @@
       <xsl:variable name="codeValue24" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
+         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
+                                test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17813,10 +17813,10 @@
       <xsl:variable name="codeValue48" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue48)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=48]/enumeration[@value=$codeValue48]"/>
+         <xsl:when test="string-length($codeValue48)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=48]/enumeration[@value=$codeValue48]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue48)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=48]/enumeration[@value=$codeValue48]">
+                                test="string-length($codeValue48)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=48]/enumeration[@value=$codeValue48]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -17892,10 +17892,10 @@
       <xsl:variable name="codeValue26" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
+         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
+                                test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18019,10 +18019,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18131,10 +18131,10 @@
       <xsl:variable name="codeValue24" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
+         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
+                                test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18172,10 +18172,10 @@
       <xsl:variable name="codeValue25" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
+         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
+                                test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18251,10 +18251,10 @@
       <xsl:variable name="codeValue26" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
+         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
+                                test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18274,10 +18274,10 @@
       <xsl:variable name="codeValue45" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue45)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=45]/enumeration[@value=$codeValue45]"/>
+         <xsl:when test="string-length($codeValue45)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=45]/enumeration[@value=$codeValue45]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue45)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=45]/enumeration[@value=$codeValue45]">
+                                test="string-length($codeValue45)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=45]/enumeration[@value=$codeValue45]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18393,10 +18393,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18505,10 +18505,10 @@
       <xsl:variable name="codeValue24" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
+         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
+                                test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18546,10 +18546,10 @@
       <xsl:variable name="codeValue25" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
+         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
+                                test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18625,10 +18625,10 @@
       <xsl:variable name="codeValue26" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
+         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
+                                test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18666,10 +18666,10 @@
       <xsl:variable name="codeValue47" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue47)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=47]/enumeration[@value=$codeValue47]"/>
+         <xsl:when test="string-length($codeValue47)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=47]/enumeration[@value=$codeValue47]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue47)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=47]/enumeration[@value=$codeValue47]">
+                                test="string-length($codeValue47)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=47]/enumeration[@value=$codeValue47]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18689,10 +18689,10 @@
       <xsl:variable name="codeValue46" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue46)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=46]/enumeration[@value=$codeValue46]"/>
+         <xsl:when test="string-length($codeValue46)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=46]/enumeration[@value=$codeValue46]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue46)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=46]/enumeration[@value=$codeValue46]">
+                                test="string-length($codeValue46)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=46]/enumeration[@value=$codeValue46]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18835,10 +18835,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18907,10 +18907,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -18982,10 +18982,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -19266,10 +19266,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -19342,10 +19342,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -19393,10 +19393,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -19451,10 +19451,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -19596,10 +19596,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -19911,10 +19911,10 @@
       <xsl:variable name="codeValue49" select="@currencyID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue49)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=49]/enumeration[@value=$codeValue49]"/>
+         <xsl:when test="string-length($codeValue49)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=49]/enumeration[@value=$codeValue49]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue49)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=49]/enumeration[@value=$codeValue49]">
+                                test="string-length($codeValue49)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=49]/enumeration[@value=$codeValue49]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -19934,10 +19934,10 @@
       <xsl:variable name="codeValue50" select="@currencyID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue50)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=50]/enumeration[@value=$codeValue50]"/>
+         <xsl:when test="string-length($codeValue50)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=50]/enumeration[@value=$codeValue50]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue50)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=50]/enumeration[@value=$codeValue50]">
+                                test="string-length($codeValue50)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=50]/enumeration[@value=$codeValue50]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20195,10 +20195,10 @@
       <xsl:variable name="codeValue43" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue43)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=43]/enumeration[@value=$codeValue43]"/>
+         <xsl:when test="string-length($codeValue43)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=43]/enumeration[@value=$codeValue43]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue43)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=43]/enumeration[@value=$codeValue43]">
+                                test="string-length($codeValue43)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=43]/enumeration[@value=$codeValue43]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20231,10 +20231,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20254,10 +20254,10 @@
       <xsl:variable name="codeValue42" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
+         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
+                                test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20277,10 +20277,10 @@
       <xsl:variable name="codeValue42" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
+         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
+                                test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20300,10 +20300,10 @@
       <xsl:variable name="codeValue42" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
+         <xsl:when test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue42)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
+                                test="string-length($codeValue42)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=42]/enumeration[@value=$codeValue42]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20443,10 +20443,10 @@
       <xsl:variable name="codeValue5" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue5)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]"/>
+         <xsl:when test="string-length($codeValue5)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue5)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]">
+                                test="string-length($codeValue5)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=5]/enumeration[@value=$codeValue5]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20504,10 +20504,10 @@
       <xsl:variable name="codeValue6" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue6)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]"/>
+         <xsl:when test="string-length($codeValue6)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue6)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]">
+                                test="string-length($codeValue6)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=6]/enumeration[@value=$codeValue6]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20527,10 +20527,10 @@
       <xsl:variable name="codeValue7" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue7)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]"/>
+         <xsl:when test="string-length($codeValue7)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue7)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]">
+                                test="string-length($codeValue7)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=7]/enumeration[@value=$codeValue7]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20663,10 +20663,10 @@
       <xsl:variable name="codeValue19" select="@mimeCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue19)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]"/>
+         <xsl:when test="string-length($codeValue19)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue19)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]">
+                                test="string-length($codeValue19)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=19]/enumeration[@value=$codeValue19]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20712,10 +20712,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20771,10 +20771,10 @@
       <xsl:variable name="codeValue20" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue20)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]"/>
+         <xsl:when test="string-length($codeValue20)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue20)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]">
+                                test="string-length($codeValue20)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20794,10 +20794,10 @@
       <xsl:variable name="codeValue18" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue18)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]"/>
+         <xsl:when test="string-length($codeValue18)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue18)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]">
+                                test="string-length($codeValue18)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20857,10 +20857,10 @@
       <xsl:variable name="codeValue16" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue16)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=16]/enumeration[@value=$codeValue16]"/>
+         <xsl:when test="string-length($codeValue16)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=16]/enumeration[@value=$codeValue16]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue16)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=16]/enumeration[@value=$codeValue16]">
+                                test="string-length($codeValue16)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=16]/enumeration[@value=$codeValue16]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20880,10 +20880,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -20934,10 +20934,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -21096,10 +21096,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -21375,10 +21375,10 @@
       <xsl:variable name="codeValue21" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue21)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=21]/enumeration[@value=$codeValue21]"/>
+         <xsl:when test="string-length($codeValue21)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=21]/enumeration[@value=$codeValue21]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue21)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=21]/enumeration[@value=$codeValue21]">
+                                test="string-length($codeValue21)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=21]/enumeration[@value=$codeValue21]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -21552,10 +21552,10 @@
       <xsl:variable name="codeValue22" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue22)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=22]/enumeration[@value=$codeValue22]"/>
+         <xsl:when test="string-length($codeValue22)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=22]/enumeration[@value=$codeValue22]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue22)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=22]/enumeration[@value=$codeValue22]">
+                                test="string-length($codeValue22)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=22]/enumeration[@value=$codeValue22]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -21611,10 +21611,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -21897,10 +21897,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -21973,10 +21973,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22024,10 +22024,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22216,10 +22216,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22293,10 +22293,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22451,10 +22451,10 @@
       <xsl:variable name="codeValue24" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
+         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
+                                test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22492,10 +22492,10 @@
       <xsl:variable name="codeValue25" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
+         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
+                                test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22571,10 +22571,10 @@
       <xsl:variable name="codeValue23" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue23)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=23]/enumeration[@value=$codeValue23]"/>
+         <xsl:when test="string-length($codeValue23)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=23]/enumeration[@value=$codeValue23]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue23)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=23]/enumeration[@value=$codeValue23]">
+                                test="string-length($codeValue23)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=23]/enumeration[@value=$codeValue23]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22625,10 +22625,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22787,10 +22787,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -22949,10 +22949,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23115,10 +23115,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23138,10 +23138,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23174,10 +23174,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23228,10 +23228,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23390,10 +23390,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23534,10 +23534,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23570,10 +23570,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23624,10 +23624,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -23985,10 +23985,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24061,10 +24061,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24125,10 +24125,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24260,10 +24260,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24513,10 +24513,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24589,10 +24589,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24640,10 +24640,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24775,10 +24775,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24945,10 +24945,10 @@
       <xsl:variable name="codeValue20" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue20)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]"/>
+         <xsl:when test="string-length($codeValue20)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue20)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]">
+                                test="string-length($codeValue20)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=20]/enumeration[@value=$codeValue20]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -24968,10 +24968,10 @@
       <xsl:variable name="codeValue18" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue18)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]"/>
+         <xsl:when test="string-length($codeValue18)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue18)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]">
+                                test="string-length($codeValue18)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=18]/enumeration[@value=$codeValue18]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25112,10 +25112,10 @@
       <xsl:variable name="codeValue24" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
+         <xsl:when test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue24)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
+                                test="string-length($codeValue24)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=24]/enumeration[@value=$codeValue24]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25135,10 +25135,10 @@
       <xsl:variable name="codeValue27" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue27)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]"/>
+         <xsl:when test="string-length($codeValue27)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue27)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]">
+                                test="string-length($codeValue27)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=27]/enumeration[@value=$codeValue27]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25158,10 +25158,10 @@
       <xsl:variable name="codeValue25" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
+         <xsl:when test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue25)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
+                                test="string-length($codeValue25)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=25]/enumeration[@value=$codeValue25]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25237,10 +25237,10 @@
       <xsl:variable name="codeValue26" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
+         <xsl:when test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue26)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
+                                test="string-length($codeValue26)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=26]/enumeration[@value=$codeValue26]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25309,10 +25309,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25345,10 +25345,10 @@
       <xsl:variable name="codeValue3" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
+         <xsl:when test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue3)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
+                                test="string-length($codeValue3)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=3]/enumeration[@value=$codeValue3]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25399,10 +25399,10 @@
       <xsl:variable name="codeValue17" select="@format"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
+         <xsl:when test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue17)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
+                                test="string-length($codeValue17)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=17]/enumeration[@value=$codeValue17]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25494,10 +25494,10 @@
       <xsl:variable name="codeValue33" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue33)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=33]/enumeration[@value=$codeValue33]"/>
+         <xsl:when test="string-length($codeValue33)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=33]/enumeration[@value=$codeValue33]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue33)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=33]/enumeration[@value=$codeValue33]">
+                                test="string-length($codeValue33)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=33]/enumeration[@value=$codeValue33]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25679,10 +25679,10 @@
       <xsl:variable name="codeValue28" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue28)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=28]/enumeration[@value=$codeValue28]"/>
+         <xsl:when test="string-length($codeValue28)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=28]/enumeration[@value=$codeValue28]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue28)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=28]/enumeration[@value=$codeValue28]">
+                                test="string-length($codeValue28)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=28]/enumeration[@value=$codeValue28]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25856,10 +25856,10 @@
       <xsl:variable name="codeValue30" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue30)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=30]/enumeration[@value=$codeValue30]"/>
+         <xsl:when test="string-length($codeValue30)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=30]/enumeration[@value=$codeValue30]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue30)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=30]/enumeration[@value=$codeValue30]">
+                                test="string-length($codeValue30)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=30]/enumeration[@value=$codeValue30]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -25879,10 +25879,10 @@
       <xsl:variable name="codeValue29" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue29)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=29]/enumeration[@value=$codeValue29]"/>
+         <xsl:when test="string-length($codeValue29)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=29]/enumeration[@value=$codeValue29]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue29)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=29]/enumeration[@value=$codeValue29]">
+                                test="string-length($codeValue29)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=29]/enumeration[@value=$codeValue29]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -26126,10 +26126,10 @@
       <xsl:variable name="codeValue31" select="@currencyID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue31)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=31]/enumeration[@value=$codeValue31]"/>
+         <xsl:when test="string-length($codeValue31)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=31]/enumeration[@value=$codeValue31]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue31)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=31]/enumeration[@value=$codeValue31]">
+                                test="string-length($codeValue31)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=31]/enumeration[@value=$codeValue31]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -26149,10 +26149,10 @@
       <xsl:variable name="codeValue32" select="@currencyID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue32)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=32]/enumeration[@value=$codeValue32]"/>
+         <xsl:when test="string-length($codeValue32)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=32]/enumeration[@value=$codeValue32]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue32)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=32]/enumeration[@value=$codeValue32]">
+                                test="string-length($codeValue32)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=32]/enumeration[@value=$codeValue32]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -26358,10 +26358,10 @@
       <xsl:variable name="codeValue9" select="@listID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue9)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=9]/enumeration[@value=$codeValue9]"/>
+         <xsl:when test="string-length($codeValue9)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=9]/enumeration[@value=$codeValue9]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue9)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=9]/enumeration[@value=$codeValue9]">
+                                test="string-length($codeValue9)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=9]/enumeration[@value=$codeValue9]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -26394,10 +26394,10 @@
       <xsl:variable name="codeValue8" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue8)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]"/>
+         <xsl:when test="string-length($codeValue8)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue8)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]">
+                                test="string-length($codeValue8)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=8]/enumeration[@value=$codeValue8]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -26542,10 +26542,10 @@
       <xsl:variable name="codeValue14" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue14)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=14]/enumeration[@value=$codeValue14]"/>
+         <xsl:when test="string-length($codeValue14)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=14]/enumeration[@value=$codeValue14]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue14)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=14]/enumeration[@value=$codeValue14]">
+                                test="string-length($codeValue14)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=14]/enumeration[@value=$codeValue14]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -26632,10 +26632,10 @@
       <xsl:variable name="codeValue15" select="@unitCode"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
+         <xsl:when test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue15)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
+                                test="string-length($codeValue15)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=15]/enumeration[@value=$codeValue15]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -26936,10 +26936,10 @@
       <xsl:variable name="codeValue11" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
+         <xsl:when test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue11)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
+                                test="string-length($codeValue11)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=11]/enumeration[@value=$codeValue11]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -27012,10 +27012,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -27063,10 +27063,10 @@
       <xsl:variable name="codeValue12" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
+         <xsl:when test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue12)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
+                                test="string-length($codeValue12)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=12]/enumeration[@value=$codeValue12]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -27255,10 +27255,10 @@
       <xsl:variable name="codeValue13" select="@schemeID"/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
+         <xsl:when test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue13)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
+                                test="string-length($codeValue13)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=13]/enumeration[@value=$codeValue13]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
@@ -27317,10 +27317,10 @@
       <xsl:variable name="codeValue10" select="."/>
       <!--ASSERT -->
       <xsl:choose>
-         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
+         <xsl:when test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]"/>
          <xsl:otherwise>
             <svrl:failed-assert xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                                test="string-length($codeValue10)=0 or document('Factur-X_1.09_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
+                                test="string-length($codeValue10)=0 or document('Factur-X_EXTENDED_codedb.xml')/codedb/cl[@id=10]/enumeration[@value=$codeValue10]">
                <xsl:attribute name="location">
                   <xsl:apply-templates select="." mode="schematron-select-full-path"/>
                </xsl:attribute>
