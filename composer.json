@@ -1,0 +1,11 @@
+{
+    "name": "tiimepdp/fnfempe-france-rfe",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Quentin Dequippe",
+            "email": "quentin.dequippe@tiimepdp.com"
+        }
+    ],
+    "require": {}
+}
