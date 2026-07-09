@@ -2,6 +2,14 @@
 
 PHP library wrapper around the source project https://github.com/fnfempe/France_RFE.
 
+## Installation
+
+Install it with Composer:
+
+```bash
+composer require tiimepdp/fnfempe-france-rfe
+```
+
 ---
 
 Forum National de la Facture - Réforme Facture Electronique en France - 
