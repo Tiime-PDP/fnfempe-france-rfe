@@ -1,6 +1,7 @@
 {
     "name": "tiimepdp/fnfempe-france-rfe",
     "type": "library",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Quentin Dequippe",
