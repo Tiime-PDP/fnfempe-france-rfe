@@ -44,9 +44,18 @@ jobs:
                   git remote add upstream https://github.com/fnfempe/France_RFE.git
                   git fetch --no-tags upstream "refs/tags/${TAG}:refs/tags/${TAG}"
                   rm -rf resources
+                  mkdir -p resources docs
+                  find docs -mindepth 1 -maxdepth 1 -name 'Z*' -exec rm -rf {} +
                   git checkout "refs/tags/${TAG}" -- FNFE_RFE_INVOICE
-                  mkdir -p resources
-                  mv FNFE_RFE_INVOICE/* resources/
+                  for path in FNFE_RFE_INVOICE/*; do
+                    name="$(basename "${path}")"
+                    if [[ "${name}" == Z* ]]; then
+                      mv "${path}" docs/
+                    else
+                      mv "${path}" resources/
+                    fi
+                  done
+                  rmdir FNFE_RFE_INVOICE
                   echo "${TAG}" > .github/upstream-france-rfe-version.txt
 
             - name: Create pull request
@@ -61,5 +70,5 @@ jobs:
                       Automated monthly update from `fnfempe/France_RFE`.
 
                       - Upstream release detected: `${{ steps.upstream.outputs.tag }}`
-                      - Synced directory: `resources`
+                      - Synced directories: `resources` and `docs` (`Z*` only)
                       - Updated tracker: `.github/upstream-france-rfe-version.txt`

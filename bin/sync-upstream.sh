@@ -5,6 +5,7 @@ set -euo pipefail
 UPSTREAM_REPO_URL="${UPSTREAM_REPO_URL:-https://github.com/fnfempe/France_RFE.git}"
 UPSTREAM_SOURCE_DIR="${UPSTREAM_SOURCE_DIR:-FNFE_RFE_INVOICE}"
 VENDOR_DATA_DIR="${VENDOR_DATA_DIR:-resources}"
+DOCS_DIR="${DOCS_DIR:-docs}"
 
 usage() {
   echo "Usage:"
@@ -17,9 +18,21 @@ sync_tag() {
 
   git fetch --no-tags "${UPSTREAM_REPO_URL}" "refs/tags/${tag}:refs/tags/${tag}"
   rm -rf "${VENDOR_DATA_DIR}"
+  mkdir -p "${DOCS_DIR}"
+  find "${DOCS_DIR}" -mindepth 1 -maxdepth 1 -name 'Z*' -exec rm -rf {} +
   git checkout "refs/tags/${tag}" -- "${UPSTREAM_SOURCE_DIR}"
-  mkdir -p "$(dirname "${VENDOR_DATA_DIR}")"
-  mv "${UPSTREAM_SOURCE_DIR}" "${VENDOR_DATA_DIR}"
+  mkdir -p "${VENDOR_DATA_DIR}"
+
+  for path in "${UPSTREAM_SOURCE_DIR}"/*; do
+    name="$(basename "${path}")"
+    if [[ "${name}" == Z* ]]; then
+      mv "${path}" "${DOCS_DIR}/"
+    else
+      mv "${path}" "${VENDOR_DATA_DIR}/"
+    fi
+  done
+
+  rmdir "${UPSTREAM_SOURCE_DIR}"
 }
 
 main() {

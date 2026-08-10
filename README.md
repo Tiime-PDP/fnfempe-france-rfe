@@ -37,6 +37,8 @@ bin/sync-upstream.sh --tag v1.4.0.03
 bin/sync-upstream.sh --latest
 ```
 
+The sync places upstream entries starting with `Z` into `docs/` and all other entries into `resources/`.
+
 ---
 
 Forum National de la Facture - Réforme Facture Electronique en France - 

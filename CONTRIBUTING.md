@@ -37,6 +37,7 @@ Optional environment overrides:
 - `UPSTREAM_REPO_URL` (default: `https://github.com/fnfempe/France_RFE.git`)
 - `UPSTREAM_SOURCE_DIR` (default: `FNFE_RFE_INVOICE`)
 - `VENDOR_DATA_DIR` (default: `resources`)
+- `DOCS_DIR` (default: `docs`, receives upstream entries matching `Z*`)
 
 Example:
 
@@ -57,7 +58,7 @@ Workflow: `.github/workflows/upstream-version-check.yml`
 
 - runs monthly and on manual dispatch
 - checks latest upstream release
-- syncs `resources` when a new tag is detected
+- syncs upstream content into `resources` and routes `Z*` entries into `docs`
 - updates `.github/upstream-france-rfe-version.txt`
 - opens an automated pull request
 
