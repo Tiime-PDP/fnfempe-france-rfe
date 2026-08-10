@@ -15,19 +15,19 @@ composer require tiimepdp/fnfempe-france-rfe
 ```php
 <?php
 
-use TiimePDP\FNFEMEPFranceRFE\CiiResourcePaths;
-use TiimePDP\FNFEMEPFranceRFE\UblResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\CIIResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\UBLResourcePaths;
 use TiimePDP\FNFEMEPFranceRFE\FacturXResourcePaths;
 use TiimePDP\FNFEMEPFranceRFE\CDARResourcePaths;
 
-$cii = CiiResourcePaths::create('EN16931');
+$cii = CIIResourcePaths::create('EN16931');
 $ciiXsdDir = $cii->xsdDir();
 $ciiBaseSchematron = $cii->baseSchematron();
 $ciiBrFrSchematronWarning = $cii->brFrSchematron(true);
 $ciiBaseXslt = $cii->baseXslt();
 $ciiBrFrXslt = $cii->brFrXslt();
 
-$ubl = UblResourcePaths::create('EXTENDED-CTC-FR');
+$ubl = UBLResourcePaths::create('EXTENDED-CTC-FR');
 $ublXsdDir = $ubl->xsdDir();
 $ublSchematronDir = $ubl->schematronDir();
 $ublBaseSchematron = $ubl->baseSchematron();

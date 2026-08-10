@@ -5,28 +5,28 @@ declare(strict_types=1);
 namespace TiimePDP\FNFEMEPFranceRFE\Tests;
 
 use PHPUnit\Framework\TestCase;
-use TiimePDP\FNFEMEPFranceRFE\CiiResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\CIIResourcePaths;
 
-final class CiiResourcePathsTest extends TestCase
+final class CIIResourcePathsTest extends TestCase
 {
     public function testCiiPaths(): void
     {
-        self::assertSame($this->resourcesBase() . '/CII/1xsd-CII_D22B_uncoupled', CiiResourcePaths::xsdDir());
+        self::assertSame($this->resourcesBase() . '/CII/1xsd-CII_D22B_uncoupled', CIIResourcePaths::xsdDir());
         self::assertSame(
             $this->resourcesBase() . '/CII/EN16931/schematron/EN16931-CII-validation-preprocessed.sch',
-            CiiResourcePaths::baseSchematron('EN16931')
+            CIIResourcePaths::baseSchematron('EN16931')
         );
         self::assertSame(
             $this->resourcesBase() . '/CII/EN16931/schematron/BR-FR-Flux2-Schematron-CII_WARNING.sch',
-            CiiResourcePaths::brFrSchematron('EN16931', true)
+            CIIResourcePaths::brFrSchematron('EN16931', true)
         );
         self::assertSame(
             $this->resourcesBase() . '/CII/EN16931/2xslt/EN16931-CII-validation.xslt',
-            CiiResourcePaths::baseXslt('EN16931')
+            CIIResourcePaths::baseXslt('EN16931')
         );
         self::assertSame(
             $this->resourcesBase() . '/CII/EN16931/2xslt/BR-FR-Flux2-Schematron-CII.xslt',
-            CiiResourcePaths::brFrXslt('EN16931')
+            CIIResourcePaths::brFrXslt('EN16931')
         );
     }
 
@@ -34,11 +34,11 @@ final class CiiResourcePathsTest extends TestCase
     {
         self::assertSame(
             $this->resourcesBase() . '/CII/EXTENDED-CTC-FR/schematron/EXTENDED-CTC-FR-CII.sch',
-            CiiResourcePaths::baseSchematron('EXTENDED-CTC-FR')
+            CIIResourcePaths::baseSchematron('EXTENDED-CTC-FR')
         );
         self::assertSame(
             $this->resourcesBase() . '/CII/EXTENDED-CTC-FR/2xslt/EXTENDED-CTC-FR-CII.xslt',
-            CiiResourcePaths::baseXslt('EXTENDED-CTC-FR')
+            CIIResourcePaths::baseXslt('EXTENDED-CTC-FR')
         );
     }
 
@@ -47,7 +47,7 @@ final class CiiResourcePathsTest extends TestCase
         $this->expectException(\InvalidArgumentException::class);
         $this->expectExceptionMessage("Unsupported CII version 'UNKNOWN'");
 
-        CiiResourcePaths::baseSchematron('UNKNOWN');
+        CIIResourcePaths::baseSchematron('UNKNOWN');
     }
 
     private function resourcesBase(): string

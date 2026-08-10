@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace TiimePDP\FNFEMEPFranceRFE;
 
-final class CiiResourcePaths
+final class CIIResourcePaths
 {
     private static function basePath(): string
     {
