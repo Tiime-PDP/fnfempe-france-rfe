@@ -1,0 +1,63 @@
+name: Check upstream France_RFE updates
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get latest upstream release tag
+        id: upstream
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const release = await github.rest.repos.getLatestRelease({
+              owner: 'fnfempe',
+              repo: 'France_RFE'
+            });
+            core.setOutput('tag', release.data.tag_name);
+
+      - name: Read tracked upstream version
+        id: tracked
+        run: |
+          if [ -f .github/upstream-france-rfe-version.txt ]; then
+            echo "tag=$(cat .github/upstream-france-rfe-version.txt)" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sync upstream files
+        if: steps.upstream.outputs.tag != steps.tracked.outputs.tag
+        run: |
+          set -euo pipefail
+          TAG="${{ steps.upstream.outputs.tag }}"
+          git remote add upstream https://github.com/fnfempe/France_RFE.git
+          git fetch --no-tags upstream "refs/tags/${TAG}:refs/tags/${TAG}"
+          rm -rf FNFE_RFE_INVOICE
+          git checkout "refs/tags/${TAG}" -- FNFE_RFE_INVOICE
+          echo "${TAG}" > .github/upstream-france-rfe-version.txt
+
+      - name: Create pull request
+        if: steps.upstream.outputs.tag != steps.tracked.outputs.tag
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: sync France_RFE upstream to ${{ steps.upstream.outputs.tag }}"
+          branch: "chore/update-france-rfe-upstream"
+          delete-branch: true
+          title: "chore: sync France_RFE upstream to ${{ steps.upstream.outputs.tag }}"
+          body: |
+            Automated monthly update from `fnfempe/France_RFE`.
+
+            - Upstream release detected: `${{ steps.upstream.outputs.tag }}`
+            - Synced directory: `FNFE_RFE_INVOICE`
+            - Updated tracker: `.github/upstream-france-rfe-version.txt`
