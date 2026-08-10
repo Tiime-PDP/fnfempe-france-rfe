@@ -43,8 +43,10 @@ jobs:
           TAG="${{ steps.upstream.outputs.tag }}"
           git remote add upstream https://github.com/fnfempe/France_RFE.git
           git fetch --no-tags upstream "refs/tags/${TAG}:refs/tags/${TAG}"
-          rm -rf FNFE_RFE_INVOICE
+          rm -rf resources
           git checkout "refs/tags/${TAG}" -- FNFE_RFE_INVOICE
+          mkdir -p resources
+          mv FNFE_RFE_INVOICE/* resources/
           echo "${TAG}" > .github/upstream-france-rfe-version.txt
 
       - name: Create pull request
@@ -59,5 +61,5 @@ jobs:
             Automated monthly update from `fnfempe/France_RFE`.
 
             - Upstream release detected: `${{ steps.upstream.outputs.tag }}`
-            - Synced directory: `FNFE_RFE_INVOICE`
+            - Synced directory: `resources`
             - Updated tracker: `.github/upstream-france-rfe-version.txt`
