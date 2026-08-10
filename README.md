@@ -15,27 +15,39 @@ composer require tiimepdp/fnfempe-france-rfe
 ```php
 <?php
 
-use TiimePDP\FNFEMEPFranceRFE\ResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\CiiResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\UblResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\FacturXResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\CDARResourcePaths;
 
-$base = ResourcePaths::base();
-$ciiXsdDir = ResourcePaths::ciiXsdDir();
-$ciiSchematron = ResourcePaths::ciiSchematron('EN16931');
-$ciiSchematronWarning = ResourcePaths::ciiSchematron('EXTENDED-CTC-FR', true);
-$ciiXslt = ResourcePaths::ciiXslt('EN16931');
-$ciiXsltWarning = ResourcePaths::ciiXslt('EXTENDED-CTC-FR', true);
-$ublXsdDir = ResourcePaths::ublXsdDir();
-$ublSchematron = ResourcePaths::ublSchematron('EN16931');
-$ublSchematronWarning = ResourcePaths::ublSchematron('EXTENDED-CTC-FR', true);
-$ublXslt = ResourcePaths::ublXslt('EN16931');
-$ublXsltWarning = ResourcePaths::ublXslt('EXTENDED-CTC-FR', true);
-$invoiceXsd = ResourcePaths::file('CII/1xsd-CII_D22B_uncoupled/CrossIndustryInvoice_100pD22B.xsd');
-$cdarSchematron = ResourcePaths::cdarSchematron();
-$cdarSchematronWarning = ResourcePaths::cdarSchematron(true);
-$facturXXsdDir = ResourcePaths::facturXXsdDir('EN16931');
-$facturXSchematron = ResourcePaths::facturXSchematron('EN16931');
-$facturXSchematronWarning = ResourcePaths::facturXSchematron('EN16931', true);
-$facturXXslt = ResourcePaths::facturXXslt('EN16931');
-$facturXXsltWarning = ResourcePaths::facturXXslt('EXTENDED', true);
+$cii = CiiResourcePaths::create('EN16931');
+$ciiXsdDir = $cii->xsdDir();
+$ciiBaseSchematron = $cii->baseSchematron();
+$ciiBrFrSchematronWarning = $cii->brFrSchematron(true);
+$ciiBaseXslt = $cii->baseXslt();
+$ciiBrFrXslt = $cii->brFrXslt();
+
+$ubl = UblResourcePaths::create('EXTENDED-CTC-FR');
+$ublXsdDir = $ubl->xsdDir();
+$ublSchematronDir = $ubl->schematronDir();
+$ublBaseSchematron = $ubl->baseSchematron();
+$ublBrFrSchematron = $ubl->brFrSchematron();
+$ublBaseXslt = $ubl->baseXslt();
+$ublBrFrXsltWarning = $ubl->brFrXslt(true);
+
+$facturX = FacturXResourcePaths::create('BASICWL');
+$facturXXsdDir = $facturX->xsdDir();
+$facturXBaseSchematron = $facturX->baseSchematron();
+$facturXBrFrSchematronWarning = $facturX->brFrSchematron(true);
+$facturXBaseXslt = $facturX->baseXslt();
+$facturXBrFrXslt = $facturX->brFrXslt();
+
+$cdar = CDARResourcePaths::create();
+$cdarXsdDir = $cdar->xsdDir();
+$cdarBrFrSchematron = $cdar->brFrSchematron();
+$cdarBrFrSchematronWarning = $cdar->brFrSchematron(true);
+$cdarBrFrXslt = $cdar->brFrXslt();
+$cdarBrFrXsltWarning = $cdar->brFrXslt(true);
 ```
 
 ## Sync upstream artifacts
