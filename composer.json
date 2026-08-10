@@ -14,8 +14,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "TiimePdp\\FnfempeFranceRfe\\": "src/"
+            "TiimePDP\\FNFEMEPFranceRFE\\": "src/"
         }
     },
-    "require": {}
+    "autoload-dev": {
+        "psr-4": {
+            "TiimePDP\\FNFEMEPFranceRFE\\Tests\\": "tests/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
 }

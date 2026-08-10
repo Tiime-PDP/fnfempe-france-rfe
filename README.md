@@ -15,12 +15,26 @@ composer require tiimepdp/fnfempe-france-rfe
 ```php
 <?php
 
-use TiimePdp\FnfempeFranceRfe\ResourcePaths;
+use TiimePDP\FNFEMEPFranceRFE\ResourcePaths;
 
 $base = ResourcePaths::base();
 $ciiXsdDir = ResourcePaths::ciiXsdDir();
 $ublSchematronDir = ResourcePaths::ublSchematronDir();
 $invoiceXsd = ResourcePaths::file('CII/1xsd-CII_D22B_uncoupled/CrossIndustryInvoice_100pD22B.xsd');
+$cdarSchematron = ResourcePaths::cdarSchematron();
+$cdarSchematronWarning = ResourcePaths::cdarSchematron(true);
+$facturX = ResourcePaths::facturXSchematron('EN16931');
+$facturXWarning = ResourcePaths::facturXSchematron('EN16931', true);
+```
+
+## Sync upstream artifacts
+
+```bash
+# Sync a specific upstream release
+bin/sync-upstream.sh --tag v1.4.0.03
+
+# Sync latest upstream release
+bin/sync-upstream.sh --latest
 ```
 
 ---
