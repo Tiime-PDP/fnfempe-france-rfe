@@ -6,7 +6,16 @@
         {
             "name": "Quentin Dequippe",
             "email": "quentin.dequippe@tiimepdp.com"
+        },
+        {
+            "name": "Tiime PDP Dev",
+            "email": "dev@tiimepdp.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "TiimePdp\\FnfempeFranceRfe\\": "src/"
+        }
+    },
     "require": {}
 }

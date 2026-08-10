@@ -10,6 +10,19 @@ Install it with Composer:
 composer require tiimepdp/fnfempe-france-rfe
 ```
 
+## PHP helpers for resource paths
+
+```php
+<?php
+
+use TiimePdp\FnfempeFranceRfe\ResourcePaths;
+
+$base = ResourcePaths::base();
+$ciiXsdDir = ResourcePaths::ciiXsdDir();
+$ublSchematronDir = ResourcePaths::ublSchematronDir();
+$invoiceXsd = ResourcePaths::file('CII/1xsd-CII_D22B_uncoupled/CrossIndustryInvoice_100pD22B.xsd');
+```
+
 ---
 
 Forum National de la Facture - Réforme Facture Electronique en France - 
