@@ -19,12 +19,23 @@ use TiimePDP\FNFEMEPFranceRFE\ResourcePaths;
 
 $base = ResourcePaths::base();
 $ciiXsdDir = ResourcePaths::ciiXsdDir();
-$ublSchematronDir = ResourcePaths::ublSchematronDir();
+$ciiSchematron = ResourcePaths::ciiSchematron('EN16931');
+$ciiSchematronWarning = ResourcePaths::ciiSchematron('EXTENDED-CTC-FR', true);
+$ciiXslt = ResourcePaths::ciiXslt('EN16931');
+$ciiXsltWarning = ResourcePaths::ciiXslt('EXTENDED-CTC-FR', true);
+$ublXsdDir = ResourcePaths::ublXsdDir();
+$ublSchematron = ResourcePaths::ublSchematron('EN16931');
+$ublSchematronWarning = ResourcePaths::ublSchematron('EXTENDED-CTC-FR', true);
+$ublXslt = ResourcePaths::ublXslt('EN16931');
+$ublXsltWarning = ResourcePaths::ublXslt('EXTENDED-CTC-FR', true);
 $invoiceXsd = ResourcePaths::file('CII/1xsd-CII_D22B_uncoupled/CrossIndustryInvoice_100pD22B.xsd');
 $cdarSchematron = ResourcePaths::cdarSchematron();
 $cdarSchematronWarning = ResourcePaths::cdarSchematron(true);
-$facturX = ResourcePaths::facturXSchematron('EN16931');
-$facturXWarning = ResourcePaths::facturXSchematron('EN16931', true);
+$facturXXsdDir = ResourcePaths::facturXXsdDir('EN16931');
+$facturXSchematron = ResourcePaths::facturXSchematron('EN16931');
+$facturXSchematronWarning = ResourcePaths::facturXSchematron('EN16931', true);
+$facturXXslt = ResourcePaths::facturXXslt('EN16931');
+$facturXXsltWarning = ResourcePaths::facturXXslt('EXTENDED', true);
 ```
 
 ## Sync upstream artifacts

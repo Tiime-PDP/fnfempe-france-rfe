@@ -61,6 +61,7 @@ final class ResourcePathsTest extends TestCase
         $facturXSchematronWarning = ResourcePaths::facturXSchematron('EN16931', true);
         $facturXXslt = ResourcePaths::facturXXslt('BASICWL');
         $facturXXsltWarning = ResourcePaths::facturXXslt('EXTENDED', true);
+        $facturXXsdDir = ResourcePaths::facturXXsdDir('BASICWL');
 
         self::assertSame(
             $this->resourcesBase() . '/Factur-X/EN16931/schematron/BR-FR-Flux2-Schematron-CII.sch',
@@ -78,10 +79,15 @@ final class ResourcePathsTest extends TestCase
             $this->resourcesBase() . '/Factur-X/EXTENDED/2xslt/BR-FR-Flux2-Schematron-CII_WARNING.xslt',
             $facturXXsltWarning
         );
+        self::assertSame(
+            $this->resourcesBase() . '/Factur-X/BASICWL/1xsd',
+            $facturXXsdDir
+        );
         self::assertFileExists($facturXSchematron);
         self::assertFileExists($facturXSchematronWarning);
         self::assertFileExists($facturXXslt);
         self::assertFileExists($facturXXsltWarning);
+        self::assertDirectoryExists($facturXXsdDir);
     }
 
     public function testFacturXVersionNormalization(): void
@@ -98,6 +104,108 @@ final class ResourcePathsTest extends TestCase
         $this->expectExceptionMessage("Unsupported Factur-X version 'UNKNOWN'");
 
         ResourcePaths::facturXSchematron('UNKNOWN');
+    }
+
+    public function testCiiPathsWithVersionAndWarningVariants(): void
+    {
+        $ciiSchematron = ResourcePaths::ciiSchematron('EN16931');
+        $ciiSchematronWarning = ResourcePaths::ciiSchematron('EXTENDED-CTC-FR', true);
+        $ciiXslt = ResourcePaths::ciiXslt('EXTENDED-CTC-FR');
+        $ciiXsltWarning = ResourcePaths::ciiXslt('EN16931', true);
+
+        self::assertSame(
+            $this->resourcesBase() . '/CII/EN16931/schematron/BR-FR-Flux2-Schematron-CII.sch',
+            $ciiSchematron
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/CII/EXTENDED-CTC-FR/schematron/BR-FR-Flux2-Schematron-CII_WARNING.sch',
+            $ciiSchematronWarning
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/CII/EXTENDED-CTC-FR/2xslt/BR-FR-Flux2-Schematron-CII.xslt',
+            $ciiXslt
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/CII/EN16931/2xslt/BR-FR-Flux2-Schematron-CII_WARNING.xslt',
+            $ciiXsltWarning
+        );
+        self::assertFileExists($ciiSchematron);
+        self::assertFileExists($ciiSchematronWarning);
+        self::assertFileExists($ciiXslt);
+        self::assertFileExists($ciiXsltWarning);
+    }
+
+    public function testCiiVersionNormalization(): void
+    {
+        self::assertSame(
+            $this->resourcesBase() . '/CII/EN16931/schematron/BR-FR-Flux2-Schematron-CII.sch',
+            ResourcePaths::ciiSchematron(' en16931 ')
+        );
+    }
+
+    public function testCiiInvalidVersionThrowsException(): void
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage("Unsupported CII version 'UNKNOWN'");
+
+        ResourcePaths::ciiSchematron('UNKNOWN');
+    }
+
+    public function testUblPathsWithVersionAndWarningVariants(): void
+    {
+        $ublSchematronDir = ResourcePaths::ublSchematronDir('EXTENDED-CTC-FR');
+        $ublXsdDir = ResourcePaths::ublXsdDir();
+        $ublSchematron = ResourcePaths::ublSchematron('EN16931');
+        $ublSchematronWarning = ResourcePaths::ublSchematron('EXTENDED-CTC-FR', true);
+        $ublXslt = ResourcePaths::ublXslt('EXTENDED-CTC-FR');
+        $ublXsltWarning = ResourcePaths::ublXslt('EN16931', true);
+
+        self::assertSame(
+            $this->resourcesBase() . '/UBL/1xsd_UBL2.1',
+            $ublXsdDir
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/UBL/EXTENDED-CTC-FR/schematron',
+            $ublSchematronDir
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/UBL/EN16931/schematron/BR-FR-Flux2-Schematron-UBL.sch',
+            $ublSchematron
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/UBL/EXTENDED-CTC-FR/schematron/BR-FR-Flux2-Schematron-UBL_WARNING.sch',
+            $ublSchematronWarning
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/UBL/EXTENDED-CTC-FR/2xslt/BR-FR-Flux2-Schematron-UBL.xslt',
+            $ublXslt
+        );
+        self::assertSame(
+            $this->resourcesBase() . '/UBL/EN16931/2xslt/BR-FR-Flux2-Schematron-UBL_WARNING.xslt',
+            $ublXsltWarning
+        );
+        self::assertDirectoryExists($ublXsdDir);
+        self::assertDirectoryExists($ublSchematronDir);
+        self::assertFileExists($ublSchematron);
+        self::assertFileExists($ublSchematronWarning);
+        self::assertFileExists($ublXslt);
+        self::assertFileExists($ublXsltWarning);
+    }
+
+    public function testUblVersionNormalization(): void
+    {
+        self::assertSame(
+            $this->resourcesBase() . '/UBL/EN16931/schematron/BR-FR-Flux2-Schematron-UBL.sch',
+            ResourcePaths::ublSchematron(' en16931 ')
+        );
+    }
+
+    public function testUblInvalidVersionThrowsException(): void
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage("Unsupported UBL version 'UNKNOWN'");
+
+        ResourcePaths::ublSchematron('UNKNOWN');
     }
 
     private function resourcesBase(): string
