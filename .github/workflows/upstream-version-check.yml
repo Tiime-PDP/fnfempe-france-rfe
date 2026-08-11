@@ -60,7 +60,7 @@ jobs:
 
             - name: Create pull request
               if: steps.upstream.outputs.tag != steps.tracked.outputs.tag
-              uses: peter-evans/create-pull-request@v6
+              uses: peter-evans/create-pull-request@v8
               with:
                   commit-message: "chore: sync France_RFE upstream to ${{ steps.upstream.outputs.tag }}"
                   branch: "chore/update-france-rfe-upstream"
