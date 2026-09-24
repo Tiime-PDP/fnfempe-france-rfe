@@ -10,7 +10,22 @@ permissions:
     contents: read
 
 jobs:
-    phpunit:
+    code-style:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+
+            - name: Setup PHP with extensions
+              uses: shivammathur/setup-php@v2
+
+            - uses: "ramsey/composer-install@v4"
+              with:
+                  working-directory: "tools/php-cs-fixer"
+
+            - name: Run PHP CS Fixer
+              run: ./tools/bin/php-cs-fixer fix --diff --dry-run
+
+    test:
         runs-on: ubuntu-latest
         strategy:
             matrix:
