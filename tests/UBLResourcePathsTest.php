@@ -53,11 +53,11 @@ final class UBLResourcePathsTest extends TestCase
     {
         self::assertSame(
             $this->resourcesBase().'/UBL/1xsd_UBL2.1/maindoc/UBL-Invoice-2.1.xsd',
-            UBLResourcePaths::rootXsd('EN16931', 'Invoice')
+            UBLResourcePaths::rootXsd('Invoice')
         );
         self::assertSame(
             $this->resourcesBase().'/UBL/1xsd_UBL2.1/maindoc/UBL-CreditNote-2.1.xsd',
-            UBLResourcePaths::rootXsd('EXTENDED-CTC-FR', 'CreditNote')
+            UBLResourcePaths::rootXsd('CreditNote')
         );
     }
 
