@@ -6,78 +6,130 @@ namespace TiimePDP\FNFEMEPFranceRFE;
 
 final class FacturXResourcePaths
 {
+    /**
+     * @param string $profile The Factur-X profile. Possible values: BASICWL, EN16931, EXTENDED. Default: EN16931.
+     *
+     * @return string the path to the XSD directory for the specified Factur-X profile
+     *
+     * @throws \InvalidArgumentException if the specified profile is not supported
+     */
+    public static function xsdDir(string $profile = 'EN16931'): string
+    {
+        $profile = self::normalizeProfile($profile);
+
+        return self::path("Factur-X/{$profile}/1xsd");
+    }
+
+    /**
+     * @param string $profile The Factur-X profile. Possible values: BASICWL, EN16931, EXTENDED. Default: EN16931.
+     *
+     * @return string the path to the root XSD file for the specified Factur-X profile
+     *
+     * @throws \InvalidArgumentException if the specified profile is not supported
+     */
+    public static function rootXsd(string $profile = 'EN16931'): string
+    {
+        $profile = self::normalizeProfile($profile);
+
+        return self::path("Factur-X/{$profile}/1xsd/Factur-X_{$profile}.xsd");
+    }
+
+    /**
+     * @param string $profile The Factur-X profile. Possible values: BASICWL, EN16931, EXTENDED. Default: EN16931.
+     *
+     * @return string the path to the base Schematron file for the specified Factur-X profile
+     *
+     * @throws \InvalidArgumentException if the specified profile is not supported
+     */
+    public static function baseSchematron(string $profile = 'EN16931'): string
+    {
+        $profile = self::normalizeProfile($profile);
+        $baseName = match ($profile) {
+            'BASICWL' => 'FACTUR-X_BASIC-WL',
+            'EN16931' => 'FACTUR-X_EN16931',
+            'EXTENDED' => 'FACTUR-X_EXTENDED',
+        };
+
+        return self::path("Factur-X/{$profile}/schematron/{$baseName}.sch");
+    }
+
+    /**
+     * @param string $profile     The Factur-X profile. Possible values: BASICWL, EN16931, EXTENDED. Default: EN16931.
+     * @param bool   $withWarning Whether to include warnings. Default: false.
+     *
+     * @return string the path to the BR-FR Schematron file for the specified Factur-X profile
+     *
+     * @throws \InvalidArgumentException if the specified profile is not supported
+     */
+    public static function brFrSchematron(string $profile = 'EN16931', bool $withWarning = false): string
+    {
+        $profile = self::normalizeProfile($profile);
+        $suffix = $withWarning ? '_WARNING' : '';
+
+        return self::path("Factur-X/{$profile}/schematron/BR-FR-Flux2-Schematron-CII{$suffix}.sch");
+    }
+
+    /**
+     * @param string $profile The Factur-X profile. Possible values: BASICWL, EN16931, EXTENDED. Default: EN16931.
+     *
+     * @return string the path to the base XSLT file for the specified Factur-X profile
+     *
+     * @throws \InvalidArgumentException if the specified profile is not supported
+     */
+    public static function baseXslt(string $profile = 'EN16931'): string
+    {
+        $profile = self::normalizeProfile($profile);
+        $baseName = match ($profile) {
+            'BASICWL' => 'FACTUR-X_BASIC-WL',
+            'EN16931' => 'FACTUR-X_EN16931',
+            'EXTENDED' => 'FACTUR-X_EXTENDED',
+        };
+
+        return self::path("Factur-X/{$profile}/2xslt/{$baseName}.xslt");
+    }
+
+    /**
+     * @param string $profile     The Factur-X profile. Possible values: BASICWL, EN16931, EXTENDED. Default: EN16931.
+     * @param bool   $withWarning Whether to include warnings. Default: false.
+     *
+     * @return string the path to the BR-FR XSLT file for the specified Factur-X profile
+     *
+     * @throws \InvalidArgumentException if the specified profile is not supported
+     */
+    public static function brFrXslt(string $profile = 'EN16931', bool $withWarning = false): string
+    {
+        $profile = self::normalizeProfile($profile);
+        $suffix = $withWarning ? '_WARNING' : '';
+
+        return self::path("Factur-X/{$profile}/2xslt/BR-FR-Flux2-Schematron-CII{$suffix}.xslt");
+    }
+
     private static function basePath(): string
     {
-        $path = realpath(__DIR__ . '/../resources');
-        if ($path === false) {
-            throw new \RuntimeException('Unable to resolve resources directory path.');
-        }
-        return $path;
+        // @phpstan-ignore-next-line
+        return realpath(__DIR__.'/../resources');
     }
 
-    private static function file(string $relativePath): string
+    private static function path(string $relativePath): string
     {
-        return self::basePath() . '/' . ltrim($relativePath, '/');
+        return self::basePath().'/'.ltrim($relativePath, '/');
     }
 
-    private static function normalizeVersion(string $version): string
+    /**
+     * @throws \InvalidArgumentException
+     */
+    private static function normalizeProfile(string $profile): string
     {
-        $normalizedVersion = strtoupper(trim($version));
+        $normalizedProfile = strtoupper(trim($profile));
 
-        return match ($normalizedVersion) {
+        return match ($normalizedProfile) {
             'BASICWL' => 'BASICWL',
             'EN16931' => 'EN16931',
             'EXTENDED' => 'EXTENDED',
             default => throw new \InvalidArgumentException(sprintf(
-                "Unsupported Factur-X version '%s'. Expected one of: BASICWL, EN16931, EXTENDED.",
-                $version
+                "Unsupported Factur-X profile '%s'. Expected one of: BASICWL, EN16931, EXTENDED.",
+                $profile
             )),
         };
-    }
-
-    public static function xsdDir(string $version = 'EN16931'): string
-    {
-        $version = self::normalizeVersion($version);
-        return self::file("Factur-X/{$version}/1xsd");
-    }
-
-    public static function baseSchematron(string $version = 'EN16931'): string
-    {
-        $version = self::normalizeVersion($version);
-        $baseName = match ($version) {
-            'BASICWL' => 'FACTUR-X_BASIC-WL',
-            'EN16931' => 'FACTUR-X_EN16931',
-            'EXTENDED' => 'FACTUR-X_EXTENDED',
-        };
-
-        return self::file("Factur-X/{$version}/schematron/{$baseName}.sch");
-    }
-
-    public static function brFrSchematron(string $version = 'EN16931', bool $withWarning = false): string
-    {
-        $version = self::normalizeVersion($version);
-        $suffix = $withWarning ? '_WARNING' : '';
-
-        return self::file("Factur-X/{$version}/schematron/BR-FR-Flux2-Schematron-CII{$suffix}.sch");
-    }
-
-    public static function baseXslt(string $version = 'EN16931'): string
-    {
-        $version = self::normalizeVersion($version);
-        $baseName = match ($version) {
-            'BASICWL' => 'FACTUR-X_BASIC-WL',
-            'EN16931' => 'FACTUR-X_EN16931',
-            'EXTENDED' => 'FACTUR-X_EXTENDED',
-        };
-
-        return self::file("Factur-X/{$version}/2xslt/{$baseName}.xslt");
-    }
-
-    public static function brFrXslt(string $version = 'EN16931', bool $withWarning = false): string
-    {
-        $version = self::normalizeVersion($version);
-        $suffix = $withWarning ? '_WARNING' : '';
-
-        return self::file("Factur-X/{$version}/2xslt/BR-FR-Flux2-Schematron-CII{$suffix}.xslt");
     }
 }

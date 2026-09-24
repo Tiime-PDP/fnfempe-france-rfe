@@ -7,65 +7,86 @@ namespace TiimePDP\FNFEMEPFranceRFE\Tests;
 use PHPUnit\Framework\TestCase;
 use TiimePDP\FNFEMEPFranceRFE\FacturXResourcePaths;
 
+/**
+ * @internal
+ *
+ * @coversNothing
+ */
 final class FacturXResourcePathsTest extends TestCase
 {
     public function testFacturXBasicWlPaths(): void
     {
-        self::assertSame($this->resourcesBase() . '/Factur-X/BASICWL/1xsd', FacturXResourcePaths::xsdDir('BASICWL'));
+        self::assertSame($this->resourcesBase().'/Factur-X/BASICWL/1xsd', FacturXResourcePaths::xsdDir('BASICWL'));
         self::assertSame(
-            $this->resourcesBase() . '/Factur-X/BASICWL/schematron/FACTUR-X_BASIC-WL.sch',
+            $this->resourcesBase().'/Factur-X/BASICWL/schematron/FACTUR-X_BASIC-WL.sch',
             FacturXResourcePaths::baseSchematron('BASICWL')
         );
         self::assertSame(
-            $this->resourcesBase() . '/Factur-X/BASICWL/schematron/BR-FR-Flux2-Schematron-CII.sch',
+            $this->resourcesBase().'/Factur-X/BASICWL/schematron/BR-FR-Flux2-Schematron-CII.sch',
             FacturXResourcePaths::brFrSchematron('BASICWL')
         );
         self::assertSame(
-            $this->resourcesBase() . '/Factur-X/BASICWL/2xslt/FACTUR-X_BASIC-WL.xslt',
+            $this->resourcesBase().'/Factur-X/BASICWL/2xslt/FACTUR-X_BASIC-WL.xslt',
             FacturXResourcePaths::baseXslt('BASICWL')
         );
         self::assertSame(
-            $this->resourcesBase() . '/Factur-X/BASICWL/2xslt/BR-FR-Flux2-Schematron-CII.xslt',
+            $this->resourcesBase().'/Factur-X/BASICWL/2xslt/BR-FR-Flux2-Schematron-CII.xslt',
             FacturXResourcePaths::brFrXslt('BASICWL')
         );
     }
 
     public function testFacturXEn16931Paths(): void
     {
-        self::assertSame($this->resourcesBase() . '/Factur-X/EN16931/1xsd', FacturXResourcePaths::xsdDir('EN16931'));
+        self::assertSame($this->resourcesBase().'/Factur-X/EN16931/1xsd', FacturXResourcePaths::xsdDir('EN16931'));
         self::assertSame(
-            $this->resourcesBase() . '/Factur-X/EN16931/schematron/FACTUR-X_EN16931.sch',
+            $this->resourcesBase().'/Factur-X/EN16931/schematron/FACTUR-X_EN16931.sch',
             FacturXResourcePaths::baseSchematron('EN16931')
         );
     }
 
     public function testFacturXExtendedPaths(): void
     {
-        self::assertSame($this->resourcesBase() . '/Factur-X/EXTENDED/1xsd', FacturXResourcePaths::xsdDir('EXTENDED'));
+        self::assertSame($this->resourcesBase().'/Factur-X/EXTENDED/1xsd', FacturXResourcePaths::xsdDir('EXTENDED'));
         self::assertSame(
-            $this->resourcesBase() . '/Factur-X/EXTENDED/schematron/FACTUR-X_EXTENDED.sch',
+            $this->resourcesBase().'/Factur-X/EXTENDED/schematron/FACTUR-X_EXTENDED.sch',
             FacturXResourcePaths::baseSchematron('EXTENDED')
+        );
+    }
+
+    public function testFacturXRootXsdByProfile(): void
+    {
+        self::assertSame(
+            $this->resourcesBase().'/Factur-X/BASICWL/1xsd/Factur-X_BASICWL.xsd',
+            FacturXResourcePaths::rootXsd('BASICWL')
+        );
+        self::assertSame(
+            $this->resourcesBase().'/Factur-X/EN16931/1xsd/Factur-X_EN16931.xsd',
+            FacturXResourcePaths::rootXsd('EN16931')
+        );
+        self::assertSame(
+            $this->resourcesBase().'/Factur-X/EXTENDED/1xsd/Factur-X_EXTENDED.xsd',
+            FacturXResourcePaths::rootXsd('EXTENDED')
         );
     }
 
     public function testFacturXBrFrXsltWithWarning(): void
     {
         self::assertSame(
-            $this->resourcesBase() . '/Factur-X/BASICWL/2xslt/BR-FR-Flux2-Schematron-CII_WARNING.xslt',
+            $this->resourcesBase().'/Factur-X/BASICWL/2xslt/BR-FR-Flux2-Schematron-CII_WARNING.xslt',
             FacturXResourcePaths::brFrXslt('BASICWL', true)
         );
     }
 
-    public function testFacturXInvalidVersionThrowsException(): void
+    public function testFacturXInvalidProfileThrowsException(): void
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage("Unsupported Factur-X version 'UNKNOWN'");
+        $this->expectExceptionMessage("Unsupported Factur-X profile 'UNKNOWN'");
 
         FacturXResourcePaths::baseSchematron('UNKNOWN');
     }
 
     private function resourcesBase(): string
     {
-        return dirname(__DIR__) . '/resources';
+        return dirname(__DIR__).'/resources';
     }
 }
