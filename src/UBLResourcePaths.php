@@ -15,15 +15,12 @@ final class UBLResourcePaths
     }
 
     /**
-     * @param string                 $profile      the UBL profile, either 'EN16931' or 'EXTENDED-CTC-FR'
      * @param 'CreditNote'|'Invoice' $documentType the UBL document type, either 'Invoice' or 'CreditNote'
      *
      * @throws \InvalidArgumentException if the document type or profile is not supported
      */
-    public static function rootXsd(string $profile = 'EN16931', string $documentType = 'Invoice'): string
+    public static function rootXsd(string $documentType = 'Invoice'): string
     {
-        self::normalizeProfile($profile);
-
         $documentType = match (strtoupper(trim($documentType))) {
             'INVOICE' => 'Invoice',
             'CREDITNOTE' => 'CreditNote',
