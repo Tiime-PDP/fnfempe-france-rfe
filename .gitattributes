@@ -5,3 +5,7 @@
 /docs export-ignore
 /bin export-ignore
 /phpunit.xml export-ignore
+*.xsl linguist-vendored
+*.xslt linguist-vendored
+*.xsd linguist-vendored
+*.sch linguist-vendored
