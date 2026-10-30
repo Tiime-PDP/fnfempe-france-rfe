@@ -52,6 +52,21 @@ $cdarBrFrXslt = CDARResourcePaths::brFrXslt();
 $cdarBrFrXsltWarning = CDARResourcePaths::brFrXslt(true);
 ```
 
+## Inspect bundled schema versions
+
+```bash
+bin/resource-versions.sh
+```
+
+Lists every bundled XSD and SCH file with its version and metadata source.
+The `VALIDATOR`, `FORMAT` and `PROFILE` columns identify the filename, format
+(CII, UBL, Factur-X, CDAR or Flux10) and profile directory. Shared CII/UBL XSDs
+use `all` as their profile; CDAR and Flux10 use `n/a`.
+Files without an identifiable version are shown as `unknown`; XML and licence
+versions are not used as schema versions.
+
+Use `bin/resource-versions.sh --csv > versions.csv` to export the results as CSV.
+
 ## Sync upstream artifacts
 
 ```bash
