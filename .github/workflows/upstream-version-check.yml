@@ -16,6 +16,9 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v7
 
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+
             - name: Get latest upstream release tag
               id: upstream
               uses: actions/github-script@v9
@@ -40,23 +43,9 @@ jobs:
               if: steps.upstream.outputs.tag != steps.tracked.outputs.tag
               run: |
                   set -euo pipefail
-                  TAG="${{ steps.upstream.outputs.tag }}"
-                  git remote add upstream https://github.com/fnfempe/France_RFE.git
-                  git fetch --no-tags upstream "refs/tags/${TAG}:refs/tags/${TAG}"
-                  rm -rf resources
-                  mkdir -p resources docs
-                  find docs -mindepth 1 -maxdepth 1 -name 'Z*' -exec rm -rf {} +
-                  git checkout "refs/tags/${TAG}" -- FNFE_RFE_INVOICE
-                  for path in FNFE_RFE_INVOICE/*; do
-                    name="$(basename "${path}")"
-                    if [[ "${name}" == Z* ]]; then
-                      mv "${path}" docs/
-                    else
-                      mv "${path}" resources/
-                    fi
-                  done
-                  rmdir FNFE_RFE_INVOICE
-                  echo "${TAG}" > .github/upstream-france-rfe-version.txt
+                  bin/sync-upstream.sh --tag "$UPSTREAM_TAG"
+              env:
+                  UPSTREAM_TAG: ${{ steps.upstream.outputs.tag }}
 
             - name: Create pull request
               if: steps.upstream.outputs.tag != steps.tracked.outputs.tag
@@ -71,4 +60,4 @@ jobs:
 
                       - Upstream release detected: `${{ steps.upstream.outputs.tag }}`
                       - Synced directories: `resources` and `docs` (`Z*` only)
-                      - Updated tracker: `.github/upstream-france-rfe-version.txt`
+                      - Updated version constant and tracker

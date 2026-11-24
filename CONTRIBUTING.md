@@ -59,7 +59,7 @@ Workflow: `.github/workflows/upstream-version-check.yml`
 - runs monthly and on manual dispatch
 - checks latest upstream release
 - syncs upstream content into `resources` and routes `Z*` entries into `docs`
-- updates `.github/upstream-france-rfe-version.txt`
+- updates `FranceRFE::VERSION` and `.github/upstream-france-rfe-version.txt`
 - opens an automated pull request
 
 ## Contribution flow

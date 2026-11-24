@@ -2,6 +2,8 @@
 
 PHP library wrapper around the source project https://github.com/fnfempe/France_RFE.
 
+The bundled upstream release tag is available as `TiimePDP\FNFEMEPFranceRFE\FranceRFE::VERSION`.
+
 ## Installation
 
 Install it with Composer:
@@ -62,4 +64,4 @@ bin/sync-upstream.sh --tag v1.4.0.03
 bin/sync-upstream.sh --latest
 ```
 
-The sync places upstream entries starting with `Z` into `docs/` and all other entries into `resources/`.
+The sync places upstream entries starting with `Z` into `docs/` and all other entries into `resources/`, and updates the upstream version constant.

@@ -33,6 +33,17 @@ sync_tag() {
   done
 
   rmdir "${UPSTREAM_SOURCE_DIR}"
+
+  local php_tag
+  php_tag="$(php -r 'echo var_export($argv[1], true);' "${tag}")"
+  {
+    printf '%s\n' '<?php' '' 'declare(strict_types=1);' '' \
+      'namespace TiimePDP\FNFEMEPFranceRFE;' '' \
+      'final class FranceRFE' '{'
+    printf '    public const VERSION = %s;\n' "${php_tag}"
+    printf '%s\n' '}'
+  } > src/FranceRFE.php
+  printf '%s\n' "${tag}" > .github/upstream-france-rfe-version.txt
 }
 
 main() {
